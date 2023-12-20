@@ -5,15 +5,15 @@ class CustomUserCreationForm(UserCreationForm):
     class Meta(UserCreationForm):
         model = CustomUser
         fields = (
-"username",
-"email",
-"age",
+            "username",
+            "email",
+            "age",
 ) # new
 class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = CustomUser
         fields = (
-"username",
-"email",
-"age",
+            "username",
+            "email",
+            "age",
 ) 
