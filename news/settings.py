@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'pages',
     "crispy_forms", # new
     "crispy_bootstrap5",
+    'articles',
+    "rest_framework",
+    "apis",
 ]
 
 MIDDLEWARE = [
@@ -111,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
 
@@ -130,5 +133,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "accounts.CustomUser"
 LOGIN_REDIRECT_URL = "home" 
 LOGOUT_REDIRECT_URL = "home" 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
